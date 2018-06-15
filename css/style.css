@@ -1,0 +1,185 @@
+/* website by Catalin Trasca using MaterializeCSS framework */
+
+/* importing framework and fonts */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Product+Sans|Roboto+Mono:300,400,500');
+@import url('https://rawgit.com/Templarian/MaterialDesign-Webfont/master/css/materialdesignicons.min.css');
+
+/* custom css design */
+
+/* major elements */
+
+:root {
+  --primary-color: #fff; /* primary and secondary color not used for now */
+  --secondary-color: #fff;
+  --background-color: #fff;
+  --main-font: 'Roboto', sans-serif;
+  --google-font: 'Product Sans', sans-serif;
+  --mono-font: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+}
+
+/* minor elements */
+
+.full-screen {
+  width: 100%;
+  min-height: 100vh
+}
+
+/* a forced option to get the main elements centered */
+
+.vh-center  {
+  margin: 0px;
+  padding:0px;
+  float: left;
+  width:100%;
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left:50%;
+}
+
+/* */
+
+.preloader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.landing-one {
+  height: 400px;
+  background: url(../res/landing/service-1.jpg) center no-repeat;
+  background-size: cover
+}
+
+.landing-two {
+  height: 400px;
+  background: url(../res/landing/service-2.jpg) center no-repeat;
+  background-size: cover
+}
+
+.landings-p {
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.google-font {
+  font-family: var(--google-font);
+}
+
+.mono-font {
+  font-family: var(--mono-font);
+}
+
+.pad-top {
+  padding-top: 1.7rem;
+}
+
+.no-padding{
+  padding: 0 !important;
+}
+
+.no-margin{
+  margin: 0 !important;
+}
+
+/* id's */
+
+#land-one h3 {
+  padding-top: 50px;
+  font-family: var(--google-font);
+}
+
+#land-two h3 {
+  padding-top: 50px;
+  font-family: var(--google-font);
+}
+
+#projects h3 {
+  padding-top: 37.5px;
+  padding-bottom: 37.5px;
+  font-family: var(--google-font);
+}
+
+/* colors */
+
+.my-color {
+  background-color: var(--primary-color) !important;
+}
+
+.my-color-text {
+  color: var(--primary-color) !important;
+}
+
+/* special */
+
+@media only screen and (max-width: 600px) {
+  .btn-margin-on-small-only {
+    margin-bottom: 67.5px !important;
+  }
+}
+
+.btn-large {
+  font-family: var(--mono-font);
+}
+
+.button-outline {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 14px 28px;
+  font-family: var(--mono-font);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.175s;
+}
+
+.button-outline:hover {
+  background-color: #494A4C;
+}
+
+/* rainbow & animation */
+
+.rainbow {
+  -webkit-animation: rainbow 8s ease infinite;
+  animation: rainbow 8s ease infinite;
+  background-image: linear-gradient(124deg, #ff470f, #ff3860, #b86bff, #3273dc);
+  background-size: 800% 800%
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 1% 80%
+  }
+  50% {
+    background-position: 99% 20%
+  }
+  100% {
+    background-position: 1% 80%
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 1% 80%
+  }
+  50% {
+    background-position: 99% 20%
+  }
+  100% {
+    background-position: 1% 80%
+  }
+}
